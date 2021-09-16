@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-tac-toe</title>
+    <link rel="stylesheet" href="css/port.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4224e5cb9a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="start">
+            <h2>TIC TAC TOE</h2>
+            <div id="line"></div>
+            <h4>Select which one you want to be</h4>
+            <div id="but">
+                <button id="playerX" class="bt">Player (X) </button>
+                <button id="playerY" class="bt">Player (O) </button>
+            </div>
+        </div>
+        <!-- Main page -->
+        <div id="main">
+            <div id="hdbt">
+                <button id="Xbt">X turn</button>
+                <button id="Obt">O turn</button>
+                <div id="change"></div>
+            </div>
+            <div id="gamebox">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div id="win">
+            <h2 id="winner">
+                <!-- Player X won the game -->
+            </h2>
+            <div id="but">
+                <button id="close">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/new.js"></script>
+</body>
+
+</html>

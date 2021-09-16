@@ -1,0 +1,149 @@
+*{
+    font-family: 'Orbitron', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-image: url('../img/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container{
+    height: auto;
+    width: auto;
+    background: linear-gradient(to bottom,rgb(41 23 89 / 76%) 10%,#aaf18e);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: inset 1px 2px 0px rgb(255 255 255 /18%),inset -2px -2px 2px rgb(0 0 0 / 65%);
+}
+#start{
+    height: 240px;
+    width: 400px;
+}
+#start h2,#win h2{
+    font-size: 50px;
+    color: #b6b8c7;
+}
+#start #line{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(235, 199, 55);
+    margin: 20px 0;
+}
+#start h4{
+    font-size: 25px;
+    color: rgb(245, 198, 98);
+}
+#start #but{
+    height: auto;
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+}
+#but button{
+    height: 50px;
+    width: 180px;
+    cursor: pointer;
+    background-color: darkorange;
+    border: none;
+    outline: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: 0.5s;
+    box-shadow: 2px 2px 2px rgb(255 255 255 /26%),-2px -2px 5px rgb(0 0 0 / 87%);
+}
+#but button:first-child{
+    margin-right:40px;
+}
+#start #but button:hover,#win #but button:hover{
+    transform: scale(0.90);
+}
+#win{
+    display: none;
+}
+#win #but{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#win #but button{
+    margin-top:20px;
+}
+#main{
+    height: 520px;
+    width: 350px;
+    padding: 20px;
+    position: relative;
+    display: none;
+}
+#main #hdbt{
+    height: 50px;
+    width: 300px;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 2px 2px 2px rgb(255 255 255 /26%),-2px -2px 5px rgb(0 0 0 / 87%);
+}
+#main #hdbt button{
+    height: 50px;
+    width: 160px;
+    border-radius: 50px;
+    border: none;
+    background:transparent;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:2;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.60);
+}
+#main #hdbt #Obt{
+    left: 147px;
+    z-index: 3;
+}
+#change{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 150px;
+    border-radius:50px;
+    background: violet;
+    z-index: 1;
+    transition: 0.2s;
+
+}
+#gamebox{
+    height: 440px;
+    width: 330px;
+    position: absolute;
+    top: 110px;
+    left: 10px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 15px;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    box-shadow: 2px 2px 2px rgb(255 255 255 /26%),-2px -2px 5px rgb(0 0 0 / 87%);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+.box i{
+    font-size: 50px;
+    color: rgb(50, 74, 211);
+}
